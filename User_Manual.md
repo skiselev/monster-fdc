@@ -191,7 +191,7 @@ Use '**t**' command to configure delays type.
 
 ## DOS Configuration
 
-It appears that by default, MS-DOS (tested on version MS-DOS 6.22) does not support more than 4 floppy drives. Use DRIVER.SYS in CONFIG.SYS to add more drives.
+It appears that by default, MS-DOS (tested on MS-DOS 6.22) does not support more than 4 floppy drives. Use DRIVER.SYS in CONFIG.SYS to add more drives.
 
 The syntax is:
 ```
