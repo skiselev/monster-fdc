@@ -170,16 +170,6 @@ The Multi-Floppy BIOS support two IPL methods:
 
 Use '**i**' command to configure IPL method.
 
-#### Configuring Delays Type
-
-The Multi-Floppy BIOS supports two delay methods:
-1. AT delays. This method uses "refresh" bit in I/O Port 0x61. This bit is normally flipped every 15 microseconds, and allows for a precise timing of delays
-2. XT delays. IBM PC/XT compatible systems do not have "refresh" bit, therefore when running on these systems, the BIOS uses a delay loop.
-
-Use '**t**' command to configure delays type.
-
-**Note:** It is important to configure the correct delay method. Using wrong delay type will cause the Multi-Floppy BIOS to fail. It will get "stuck" when using AT delays on XT systems, or floppy accesses might fail when using XT delays on AT systems (these systems are faster, and the delay loop will not produce long enough delays)
-
 #### Other Commands
 
 * Use '**p**' command to print the current configuration
