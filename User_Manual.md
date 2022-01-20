@@ -183,11 +183,9 @@ Use '**t**' command to configure delays type.
 #### Other Commands
 
 * Use '**p**' command to print the current configuration
-* Use '**w**' command to write the configuration to the flash ROM / EEPROM and exit. Note that flash ROM / EEPROM needs to be writable - the JP5.7 jumper set, and on newer systems, the caching for the memory range where Multi-Floppy BIOS Extension ROM resides should be disabled
+* Use '**w**' command to write the configuration to the flash ROM / EEPROM and reboot the system. Note that flash ROM / EEPROM needs to be writable - the JP5.7 jumper set, and on newer systems, the caching for the memory range where Multi-Floppy BIOS Extension ROM resides should be disabled
 * Use '**q**' command to exit configuration utility without writing the configuration to the flash ROM / EEPROM
 * Use '**h**' command to print help
-
-**Warning:** Make sure to reboot the system after enabling the secondary FDC, configuring drives on the secondary FDC, and writing the configuration to flash ROM / EEPROM. This is required so that Multi-Floppy BIOS will properly configure the interrupt vectors required to support the secondary FDC
 
 ## DOS Configuration
 
