@@ -10,8 +10,6 @@ Monster FDC is an ISA floppy disk controller board that features two FDCs. Each 
 
 [User Manual](User_Manual.md)
 
-[Assembly Instructions](Assembly_Instructions.md)
-
 ## Hardware Documentation
 
 ### Schematic and PCB Layout
@@ -33,7 +31,7 @@ Component type     | Reference | Description                                 | Q
 PCB                |           | Monster PCB - Version 1.0                   | 1        | Buy from my Tindie store: [Monster FDC PCB](https://www.tindie.com/products/weird/monster-fdc-pcb/), or order from a PCB manufacturer of your choice using provided Gerber or KiCad files
 Integrated Circuit | U1, U2    | Intel 82077AA FDC, 68 pin PLCC              | 2        | eBay; Possible replacements: National Semiconductor PC8477BV-1 or PC8477AV-1, Intel 82077SL, Intel 82077AA with various suffixes
 Integrated Circuit | U3        | 16C550 UART, 44 pin PLCC                    | 1        | Mouser [701-ST16C550CJ44-F](https://www.mouser.com/ProductDetail/701-ST16C550CJ44-F)
-Integrated Circuit | U4        | GD75232N RS-232 Transcievers, 20 pin DIP    | 1        | Mouser [595-GD75232N](https://www.mouser.com/ProductDetail/595-GD75232N)
+Integrated Circuit | U4        | GD75232N RS-232 Transceivers, 20 pin DIP    | 1        | Mouser [595-GD75232N](https://www.mouser.com/ProductDetail/595-GD75232N)
 Integrated Circuit | U5        | SST39SF010A - 128 KiB Flash ROM, 32 pin DIP | 1*       | Mouser [804-39SF010A7CPHE](https://www.mouser.com/ProductDetail/804-39SF010A7CPHE); Possible replacements: 128 KiB, 256 KiB, or 512 KiB 5V only Flash ROMs from other vendors. Note: Install either U5 or U6. It is recommended to install U5
 Integrated Circuit | U6        | 28C256 32 KiB or 28C64 8 KiB EEPROM, 28 pin DIP | 1*   | Mouser [556-AT28C25615PU](https://www.mouser.com/ProductDetail/556-AT28C25615PU), [556-AT28C64B15PU](https://www.mouser.com/ProductDetail/556-AT28C64B15PU). Note: Install either U5 or U6. It is recommended to install U5
 Integrated Circuit | U7        | CD74HCT688E Magnitude Comparator, 20 pin DIP | 1       | Mouser [595-CD74HCT688E](https://www.mouser.com/ProductDetail/595-CD74HCT688E)
@@ -64,15 +62,67 @@ Screw              |           | 4-40 Hex screw for D-Sub Connector          | 2
 Computer Bracket   |           | Keystone Electronics 9202 ISA Bracket       | 1        | Mouser [534-9202](https://www.mouser.com/ProductDetail/534-9202). Note: Use when serial port components are **not** populated
 Screw              |           | 4-40 / 1/4" screw (for attaching ISA Bracket to the board) | 2 | Mouser [534-9900](https://www.mouser.com/ProductDetail/534-9900). Note: Use when serial port components are **not** populated
 
+#### Component Selection Notes
+
+The board can be populated with some or all of the following devices:
+* Primary FDC controller
+* Secondary FDC controller
+* Serial port / UART
+* BIOS extension ROM (aka boot ROM)
+
+The table below provides the list of components that are required for each one of the devices
+
+Device/Functionality     | Components
+-------------------------|------------------------------------------------------------------------------------------------
+Primary FDC Controller   | U1, U8, U9, X1, J1, J2, JP1, JP6**, JP7**, C1*, C3, C5, C11, C12, C14, C19, RN1, RN4
+Secondary FDC Controller | U2, U8, U10, X1, J3, J4, JP1, JP2, JP3, JP8**, JP9**, C2*, C4, C6, C11, C13, C14, C20, RN2, RN4
+Serial port / UART       | U3, U4, U8, U9, X2, J5, JP1, JP2, JP4, C7, C8, C11, C12, C15, C16, C17, C22, C23, RN4
+BIOS extension ROM       | U5***, U6***, U7, JP5, RN3, C9, C10
+Shared components        | C18
+
+Notes:
+* \* - only required for Intel 82077AA FDCs
+* \** - only required when using IBM PS/2 floppy drives that are powered by 5V on pin 3
+* \*** - install either U5 (recommended) or U6
+* Use Keystone Electronics 9200-1 Bracket when populating serial port components. This bracket attaches to the serial port DE-9 connector
+* Use Keystone Electronics 9202 ISA Bracket when not populating serial port components. This bracket attaches to the board with a couple of 4-40 screws
+
 #### Possible Component Replacements
 
-* U1 - Intel 82077AA FDC
-  * National Semiconductor PC8477BV-1 (recommended)
-  * Intel N82077 (recommended, no tape support)
-  * Intel N82077AA (recommended, no tape support)
-  * Intel N82077AA-1 (tape support, FM broken)
-  * Intel N82077AA-5 (doesn't support 1 Mbps rate / ED disks)
-  * National Semiconductor PC8477AV-1 (older version of PC8277BV-1)
+* U1, U2 - Intel 82077AA FDC
+  * National Semiconductor PC8477BV-1 - recommended
+  * Intel N82077SL - recommended
+  * Intel N82077AA - recommended, no tape support
+  * Intel N82077AA-1 - tape support, FM broken
+  * Intel N82077AA-5 - doesn't support 1 Mbps rate / ED disks
+  * National Semiconductor PC8477AV-1 - older version of PC8277BV-1
+* U3 - 16C550 UART
+  * Most 16450/16550A type UARTs in PLCC-44 package supporting 5V operation
+  * 16C550 and 16550A type UARTs from other vendors - Texas Instruments, National Semiconductor, MaxLinear, NXP Semiconductors
+  * 16C650, 16C750, 16C850 type UARTs (longer FIFO)
+  * 16C450, 16450, 16550 type UARTs without FIFO
+* U4 - GD75232N RS-232 Transceivers 
+  * Texas Instruments SN75185N, SN75C185
+* U5 - 128 KiB Flash ROM 
+  * Most 128 KiB, 256 KiB, and 512 KiB Flash ROM ICs in DIP-32 package supporting 5V-only operation. Note that only first 32 KiB will be used regardless of the ROM capacity
+  * Microchip/SST SST39SF010A, SST39SF020, SST39SF040
+  * AMD Am29F010, Am29F020
+  * Winbond W29EE011
+  * Atmel AT29C010A
+  * Greenliant/SST SST29EE010/GLS29EE010
+* U6 - 32 KiB or 8 KiB EEPROM
+  * Atmel AT28C256, AT28C64B
+* U7 - CD74HCT688E Magnitude Comparator
+  * 74HCT688
+  * 74LS668, 74F521
+* U8 - U10 - SN74AHCT138N 3-to-8 Decoder
+  * 74AHCT138
+  * 74HCT138
+  * 74ALS138, 74F138, 74LS138
+* X1
+  * Other 24 MHz half can 5V oscillators
+* X2
+  * Other 1.8432 MHz half can 5V oscillators
 
 ## Release Notes
 
