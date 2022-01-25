@@ -1,4 +1,4 @@
-# monster-fdc
+# Monster Floppy Disk Controller (Monster FDC)
 ISA floppy disk controller card that supports up to 8 floppy drives
 
 ## Introduction
@@ -8,7 +8,8 @@ Monster FDC is an ISA floppy disk controller board that features two FDCs. Each 
 
 ## User Manuals
 
-[User Manual](User_Manual.md)
+* Refer to [Assembly Instructions](Assembly_Instructions.md) for the the controller board building instructions
+* Refer to [User Manual](User_Manual.md) for configuration, installation, and using the controller board in the computer
 
 ## Hardware Documentation
 
@@ -24,11 +25,11 @@ Monster FDC is an ISA floppy disk controller board that features two FDCs. Each 
 
 [Monster FDC project on Mouser.com](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=8ae2858f5a) - View and order all components except of the PCB and the FDC ICs.
 
-Monster FDC project on Tindie: [Complete Board](https://www.tindie.com/products/weird/monster-fdc-complete-board/); [Monster FDC PCB](https://www.tindie.com/products/weird/monster-fdc-pcb/).
+Monster FDC project on Tindie: [Complete Board](https://www.tindie.com/products/weird/monster-fdc/); [Monster FDC PCB](https://www.tindie.com/products/weird/monster-fdc-pcb/).
 
 Component type     | Reference | Description                                 | Quantity | Possible sources and notes 
 ------------------ | --------- | ------------------------------------------- | -------- | --------------------------
-PCB                |           | Monster PCB - Version 1.0                   | 1        | Buy from my Tindie store: [Monster FDC PCB](https://www.tindie.com/products/weird/monster-fdc-pcb/), or order from a PCB manufacturer of your choice using provided Gerber or KiCad files
+PCB                |           | Monster PCB - Version 1.0                   | 1        | Buy from my Tindie store: [Monster FDC PCB](https://www.tindie.com/products/weird/monster-fdc-pcb/), or order from a PCB manufacturer of your choice using provided Gerber or KiCad files. It is recommended to use hard gold plating on the card edge connector. ENIG finish might work, but it is not as reliable. Definitely **DO NOT** use HASL finish on card edge connector.
 Integrated Circuit | U1, U2    | Intel 82077AA FDC, 68 pin PLCC              | 2        | eBay; Possible replacements: National Semiconductor PC8477BV-1 or PC8477AV-1, Intel 82077SL, Intel 82077AA with various suffixes
 Integrated Circuit | U3        | 16C550 UART, 44 pin PLCC                    | 1        | Mouser [701-ST16C550CJ44-F](https://www.mouser.com/ProductDetail/701-ST16C550CJ44-F)
 Integrated Circuit | U4        | GD75232N RS-232 Transceivers, 20 pin DIP    | 1        | Mouser [595-GD75232N](https://www.mouser.com/ProductDetail/595-GD75232N)
