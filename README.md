@@ -23,7 +23,7 @@ Monster FDC is an ISA floppy disk controller board that features two FDCs. Each 
 
 #### Version 1.0
 
-[Monster FDC project on Mouser.com](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=8ae2858f5a) - View and order all components except of the PCB and the FDC ICs.
+[Monster FDC project on Mouser.com](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=8ae2858f5a) - View and order all components except of the PCB and the FDC ICs. Note that this BOM includes multiple alternatives for some parts (for example, for 2x17 pin floppy disk connector). Make sure to refer to the BOM below to order the right number of components.
 
 Monster FDC project on Tindie: [Complete Board](https://www.tindie.com/products/weird/monster-fdc/); [Monster FDC PCB](https://www.tindie.com/products/weird/monster-fdc-pcb/).
 
@@ -63,9 +63,9 @@ Screw              |           | 4-40 Hex screw for D-Sub Connector          | 2
 Computer Bracket   |           | Keystone Electronics 9202 ISA Bracket       | 1        | Mouser [534-9202](https://www.mouser.com/ProductDetail/534-9202). Note: Use when serial port components are **not** populated
 Screw              |           | 4-40 / 1/4" screw (for attaching ISA Bracket to the board) | 2 | Mouser [534-9900](https://www.mouser.com/ProductDetail/534-9900). Note: Use when serial port components are **not** populated
 
-#### Component Selection Notes
+#### Devices and Functionality
 
-The board can be populated with some or all of the following devices:
+The board can be built with some or all of the following devices and functionality:
 * Primary FDC controller
 * Secondary FDC controller
 * Serial port / UART
