@@ -2,7 +2,7 @@
 ISA floppy disk controller card that supports up to 8 floppy drives
 
 ## Introduction
-Monster FDC is an ISA floppy disk controller board that features two FDCs. Each FDC supports up to four floppy drives. IRQ and DMA channel are configurable for the secondary FDC, and they are hardwired to IRQ6 and DMA2 for the primary FDC. The board also includes a serial port (UART) with configurable I/O address and IRQ.
+Monster FDC is an ISA floppy disk controller card that features two FDCs. Each FDC supports up to four floppy drives. IRQ and DMA channel are configurable for the secondary FDC, and they are hardwired to IRQ6 and DMA2 for the primary FDC. The card also includes a serial port (UART) with configurable I/O address and IRQ.
 
 <img src="images/Monster_FDC-Assembled_Board.jpg" alt="Monster FDC Assembled Board" height="600"> 
 
@@ -65,7 +65,7 @@ Screw              |           | 4-40 / 1/4" screw (for attaching ISA Bracket to
 
 #### Devices and Functionality
 
-The board can be built with some or all of the following devices and functionality:
+The card can be built with some or all of the following devices and functionality:
 * Primary FDC controller
 * Secondary FDC controller
 * Serial port / UART
