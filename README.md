@@ -25,11 +25,11 @@ Monster FDC is an ISA floppy disk controller card that features two FDCs. Each F
 
 [Monster FDC project on Mouser.com](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=8ae2858f5a) - View and order all components except of the PCB and the FDC ICs. Note that this BOM includes multiple alternatives for some parts (for example, for 2x17 pin floppy disk connector). Make sure to refer to the BOM below to order the right number of components.
 
-Monster FDC project on Tindie: [Complete Board](https://www.tindie.com/products/weird/monster-fdc/); [Monster FDC PCB](https://www.tindie.com/products/weird/monster-fdc-pcb/).
+Monster FDC project on Tindie: [Complete Board](https://www.tindie.com/products/weird/monster-fdc/); [Monster FDC PCB](https://www.tindie.com/products/weird/monster-fdc-pcb-only/).
 
 Component type     | Reference | Description                                 | Quantity | Possible sources and notes 
 ------------------ | --------- | ------------------------------------------- | -------- | --------------------------
-PCB                |           | Monster PCB - Version 1.0                   | 1        | Buy from my Tindie store: [Monster FDC PCB](https://www.tindie.com/products/weird/monster-fdc-pcb/), or order from a PCB manufacturer of your choice using provided Gerber or KiCad files. It is recommended to use hard gold plating on the card edge connector. ENIG finish might work, but it is not as reliable. Definitely **DO NOT** use HASL finish on card edge connector.
+PCB                |           | Monster PCB - Version 1.0                   | 1        | Buy from my Tindie store: [Monster FDC PCB](https://www.tindie.com/products/weird/monster-fdc-pcb-only/), or order from a PCB manufacturer of your choice using provided Gerber or KiCad files. It is recommended to use hard gold plating on the card edge connector. ENIG finish might work, but it is not as reliable. Definitely **DO NOT** use HASL finish on card edge connector.
 Integrated Circuit | U1, U2    | Intel 82077AA FDC, 68 pin PLCC              | 2        | eBay; Possible replacements: National Semiconductor PC8477BV-1 or PC8477AV-1, Intel 82077SL, Intel 82077AA with various suffixes
 Integrated Circuit | U3        | 16C550 UART, 44 pin PLCC                    | 1        | Mouser [701-ST16C550CJ44-F](https://www.mouser.com/ProductDetail/701-ST16C550CJ44-F)
 Integrated Circuit | U4        | GD75232N RS-232 Transceivers, 20 pin DIP    | 1        | Mouser [595-GD75232N](https://www.mouser.com/ProductDetail/595-GD75232N)
