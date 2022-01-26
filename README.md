@@ -96,7 +96,7 @@ Notes:
   * Intel N82077AA - recommended, no tape support
   * Intel N82077AA-1 - tape support, FM broken
   * Intel N82077AA-5 - doesn't support 1 Mbps rate / ED disks
-  * National Semiconductor PC8477AV-1 - older version of PC8277BV-1
+  * National Semiconductor PC8477AV-1 - an older version of PC8277BV-1
 * U3 - 16C550 UART
   * Most 16450/16550A type UARTs in PLCC-44 package supporting 5V operation
   * 16C550 and 16550A type UARTs from other vendors - Texas Instruments, National Semiconductor, MaxLinear, NXP Semiconductors
@@ -105,12 +105,14 @@ Notes:
 * U4 - GD75232N RS-232 Transceivers 
   * Texas Instruments SN75185N, SN75C185
 * U5 - 128 KiB Flash ROM 
-  * Most 128 KiB, 256 KiB, and 512 KiB Flash ROM ICs in DIP-32 package supporting 5V-only operation. Note that only first 32 KiB will be used regardless of the ROM capacity
+  * Most 128 KiB Flash ROM ICs in DIP-32 package supporting 5V-only operation
   * Microchip/SST SST39SF010A, SST39SF020, SST39SF040
   * AMD Am29F010, Am29F020
   * Winbond W29EE011
   * Atmel AT29C010A
   * Greenliant/SST SST29EE010/GLS29EE010
+  * 256 KiB, and 512 KiB Flash ROM ICs in DIP-32 package supporting 5V-only operation can be used as well, but are not currently supported by the built-in configuration utility and xiflash utility
+  * Note that only first 32 KiB will be used regardless of the ROM capacity
 * U6 - 32 KiB or 8 KiB EEPROM
   * Atmel AT28C256, AT28C64B
 * U7 - CD74HCT688E Magnitude Comparator
@@ -121,9 +123,9 @@ Notes:
   * 74HCT138
   * 74ALS138, 74F138, 74LS138
 * X1
-  * Other 24 MHz half can 5V oscillators
+  * Any 24 MHz half can 5V oscillators
 * X2
-  * Other 1.8432 MHz half can 5V oscillators
+  * Any 1.8432 MHz half can 5V oscillators
 
 ## Release Notes
 
