@@ -142,6 +142,6 @@ None, so far
 
 ### Licensing
 
-Monster FDC is an open source hardware project certified by [Open Source Hardware Association](https://www.oshwa.org/), certification UID is [US00xxxx](https://certification.oshwa.org/us00xxxx.html). The hardware design itself, including schematic and PCB layout design files are licensed under the strongly-reciprocal variant of [CERN Open Hardware Licence version 2](license-cern_ohl_s_v2.txt). The [Multi-Flopppy BIOS](https://github.com/skiselev/floppy_bios) code is licensed under [GNU General Public License v3](license-gpl-3.0.txt). Documentation, including this file, is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](license-cc-by-sa-4.0.txt).
+Monster FDC is an open source hardware project certified by [Open Source Hardware Association](https://www.oshwa.org/), certification UID is [US002072](https://certification.oshwa.org/us002072.html). The hardware design itself, including schematic and PCB layout design files are licensed under the strongly-reciprocal variant of [CERN Open Hardware Licence version 2](license-cern_ohl_s_v2.txt). The [Multi-Flopppy BIOS](https://github.com/skiselev/floppy_bios) code is licensed under [GNU General Public License v3](license-gpl-3.0.txt). Documentation, including this file, is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](license-cc-by-sa-4.0.txt).
 
 ![CERN-OHL-2.0-S, GPL-3.0, CC-BY-SA-4.0](images/CERN-OHL-2.0-S_GPL-3.0-only_CC-BY-SA-4.0.svg)
