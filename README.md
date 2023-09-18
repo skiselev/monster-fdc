@@ -42,8 +42,8 @@ Crystal Oscillator | X2        | 1.8432 MHz, 4 pin DIP, Half Can             | 1
 Connector          | J1 - J4   | 2x17 pin shrouded header, 2.54 mm pitch, vertical | 4  | Mouser [517-30334-6002](https://www.mouser.com/ProductDetail/517-30334-6002)
 Connector          | J5        | DE-9 D-Sub connector, male, right angle     | 1        | Mouser [806-K22X-E9P-N-99](https://www.mouser.com/ProductDetail/806-K22X-E9P-N-99)
 Pin Header         | JP1 - JP3 | 2x6 pin header, 2.54 mm pitch, vertical     | 3        | Mouser [649-67996-112HLF](https://www.mouser.com/ProductDetail/649-67996-112HLF)
-Pin Header         | JP4       | 2x7 pin header, 2.54 mm pitch, vertical     | 1        | Mouser [649-67996-114HLF](https://www.mouser.com/ProductDetail/649-67996-114HLF)
-Pin Header         | JP5       | 1x5 pin header, 2.54 mm pitch, vertical     | 1        | Mouser [649-68000-205HLF](https://www.mouser.com/ProductDetail/649-68000-205HLF)
+Pin Header         | JP4       | 1x5 pin header, 2.54 mm pitch, vertical     | 1        | Mouser [649-68000-205HLF](https://www.mouser.com/ProductDetail/649-68000-205HLF)
+Pin Header         | JP5       | 2x7 pin header, 2.54 mm pitch, vertical     | 1        | Mouser [649-67996-114HLF](https://www.mouser.com/ProductDetail/649-67996-114HLF)
 Pin Header         | JP6 - JP9 | 2x2 pin header, 2.54 mm pitch, vertical     | 2*       | Mouser [649-67996-104HLF](https://www.mouser.com/ProductDetail/649-67996-104HLF). Note: Do not install unless using PS/2 floppy drives that are powered by pin 3
 Capacitor          | C1, C2    | 4.7 nF, 50V, MLCC, 5 mm pitch               | 2*       | Mouser [810-FG28X7R1H472KNT0](https://www.mouser.com/ProductDetail/810-FG28X7R1H472KNT0). Note: Optional, only required when using Intel 82077AA FDC
 Capacitor          | C3 - C17  | 100 nF, 50V, MLCC, 5 mm pitch               | 15       | Mouser [810-FG28X7R1H104KNT6](https://www.mouser.com/ProductDetail/810-FG28X7R1H104KNT6)
