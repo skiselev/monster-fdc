@@ -47,7 +47,7 @@ Solder the components going from lower profile components to higher profile comp
   * These are non-polarized ceramic capacitors, so they can be oriented either way
   * Trim the leads using cutters
 * Solder C18 - C23 10 uF capacitors
-  * These are polarized capacitors and must be oriented correctly. The negative (-) side usually marked with paint, and the negative (-) lead is shorted than the positive (+) one
+  * These are polarized capacitors and must be oriented correctly. The negative (-) side usually marked with paint, and the negative (-) lead is shorter than the positive (+) one
   * Trim the leads using cutters
 * Solder X1 - X2 oscillator sockets
   * Make sure that sockets are oriented correctly. The notch on the socket should match with the notch on the board's silkscreen
