@@ -58,7 +58,7 @@ IC Socket          | U6        | 28 pin DIP                                  | 1
 IC Socket          | U8 - U10  | 16 pin DIP                                  | 1        | Mouser [649-DILB16P-223TLF](https://www.mouser.com/ProductDetail/649-DILB16P-223TLF)
 Oscillator Socket  | X1, X2    | 4 pin DIP, Half Can                         | 2        | Mouser [535-1108800](https://www.mouser.com/ProductDetail/535-1108800)
 Jumper             | JP1 - JP5 | Shunt, 2 pin 2.54 mm pitch                  | 13       | Mouser [806-SX1100-B](https://www.mouser.com/ProductDetail/806-SX1100-B)
-Computer Bracket   |           | Keystone Electronics 9200-1 Bracket with DE-9 cut-out | 1 | Mouser [534-9200-1](https://www.mouser.com/ProductDetail/534-9200-1). Note: Use when serial port components are populated
+Computer Bracket   |           | Keystone Electronics 9200-1 Bracket with DE-9 cut-out | 1 | Mouser [534-9200-1](https://www.mouser.com/ProductDetail/534-9200-1), or a [3D printed bracket](https://www.thingiverse.com/thing:6473572). Note: Use when serial port components are populated
 Screw              |           | 4-40 Hex screw for D-Sub Connector          | 2        | Mouser [806-JSX-1000](https://www.mouser.com/ProductDetail/806-JSX-1000). Note: Use when serial port components are populated
 Computer Bracket   |           | Keystone Electronics 9202 ISA Bracket       | 1        | Mouser [534-9202](https://www.mouser.com/ProductDetail/534-9202). Note: Use when serial port components are **not** populated
 Screw              |           | 4-40 / 1/4" screw (for attaching ISA Bracket to the board) | 2 | Mouser [534-9900](https://www.mouser.com/ProductDetail/534-9900). Note: Use when serial port components are **not** populated
